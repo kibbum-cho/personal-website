@@ -1,0 +1,51 @@
+.education-container {
+    padding-bottom: 30px;
+}
+
+.education-row:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.education-chart-left {
+    text-align: right;
+    padding-right: 3em;
+    letter-spacing: 3px;
+}
+
+.education-chart-right {
+    padding-left: 3em;
+}
+
+
+@media screen and (max-width: 599px) {
+    .education-chart-left {
+        text-align: center;
+        padding-right: 0;
+    }
+    .education-chart-right {
+        padding-left: 0;
+    }
+}
+
+.edu-detail-container {
+    padding: 16px;
+    max-width: 400px;
+}
+
+.education-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 200px;
+    max-height: 35px;
+    margin-bottom: 10px;
+}
+
+.education-logo-container>img {
+    max-width: 100%;
+    max-height: 35px;
+}
+
+.card {
+  max-width: 400px;
+}

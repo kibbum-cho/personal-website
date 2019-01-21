@@ -1,0 +1,42 @@
+.skills-container {
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.skill-box {
+    background-color: #D0E2F3;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px 20px 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.skill-overlay {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: #81c6d4;
+}
+
+.skill-box:hover .skill-overlay {
+    width: 100%;
+    opacity: 1;
+}
+
+.mat-button {
+    min-width: 0;
+    line-height: 0;
+    padding: 0;
+    border-radius: 4px;
+    color: white;
+}
