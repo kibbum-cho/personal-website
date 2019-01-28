@@ -2,38 +2,46 @@
   <h3>MORE ABOUT KI</h3>
 </div>
 <div fxLayout="row" fxLayoutAlign="center">
+
   <div class="more-about-container" fxLayout="row wrap" fxLayoutAlign="center">
-    <div class="more-about-img-box">
-      <img src="../../assets/profile_img.jpg">
-      <a href="https://material.angular.io/guide/theming">
-        <div class="more-about-img-overlay">
+    <div class="more-about-content" id="more-about-content">
+      <div [@fadeIn]="states[0]" class="more-about-img-box">
+        <img src="../../assets/my_pictures/my_picture_0.jpg">
+        <a href="https://photos.app.goo.gl/SJi6fPD4CuCsdV7t8" target="_blank">
+          <div class="more-about-img-overlay">
             <div class="more-about-link-content" fxLayout="column" fxLayoutAlign="center center">
-                <mat-icon class="icon">camera_alt</mat-icon>
-                <div class="text">Click to see more Photos</div>
-              </div>
-        </div>
-      </a>
+              <mat-icon class="icon">camera_alt</mat-icon>
+              <div class="text">Click to see more Photos</div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
 
-    <a href="https://material.angular.io/guide/theming">
-      <div class="more-about-link-box">
-        <div class="more-about-link-content" fxLayout="column" fxLayoutAlign="center center">
-          <mat-icon class="icon">camera_alt</mat-icon>
-          <div class="text">Click to see more Photos</div>
-        </div>
-      </div>
-    </a>
-    
-    <div class="more-about-img-box">
-      <img src="../../assets/profile_img.jpg">
-      <a href="https://material.angular.io/guide/theming">
-        <div class="more-about-img-overlay">
-            <div class="more-about-link-content" fxLayout="column" fxLayoutAlign="center center">
-                <mat-icon class="icon">camera_alt</mat-icon>
-                <div class="text">Click to see more Photos</div>
-              </div>
+    <div [@fadeIn]="states[1]" class="more-about-content">
+      <a href="https://photos.app.goo.gl/7JAsf8A4iswFnMJd9" target="_blank">
+        <div class="more-about-link-box">
+          <div class="more-about-link-content" fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="icon">camera_alt</mat-icon>
+            <div class="text">Click to see more Photos</div>
+          </div>
         </div>
       </a>
     </div>
+    
+    <div [@fadeIn]="states[2]" class="more-about-content">
+      <div class="more-about-img-box">
+        <img src="../../assets/my_pictures/my_picture_1.jpg">
+        <a href="https://photos.app.goo.gl/Z1XqZnFTTG6vLZDk9" target="_blank">
+          <div class="more-about-img-overlay">
+            <div class="more-about-link-content" fxLayout="column" fxLayoutAlign="center center">
+              <mat-icon class="icon">camera_alt</mat-icon>
+              <div class="text">Click to see more Photos</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>

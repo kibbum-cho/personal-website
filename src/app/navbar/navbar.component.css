@@ -1,9 +1,10 @@
 .fixed-toolbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 2;
+}
+
+.nav-spacer{
+  height: 65px;
 }
 
 .container {
@@ -14,12 +15,7 @@
   padding: 0 14px;
 }
 
-.example-spacer {
+.nav-gap {
   flex: 1 1 auto;
 }
 
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}

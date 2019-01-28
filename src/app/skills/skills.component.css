@@ -3,15 +3,26 @@
     margin-bottom: 10px;
 }
 
+.skill-box-container {
+    margin: 0 10px 20px 10px;
+    width: 150px;
+    height: 40px;
+}
+
 .skill-box {
-    background-color: #D0E2F3;
     position: relative;
     text-align: center;
     line-height: 40px;
-    margin: 0 10px 20px 10px;
-    width: 200px;
-    height: 40px;
     border-radius: 4px;
+    overflow: hidden;
+}
+
+.programming {
+    background-color: #D0E2F3;
+}
+
+.other {
+    background-color: #D7DBD1;
 }
 
 .skill-overlay {

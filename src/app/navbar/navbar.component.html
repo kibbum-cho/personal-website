@@ -1,57 +1,41 @@
 <mat-toolbar class="fixed-toolbar mat-elevation-z6">
   <div class="container">
-    <a class="title" mat-button>
+    <a mat-button class="title" routerLink="/home">
       <h4>{{title}}</h4>
     </a>
-    <span class="example-spacer"></span>
+    <span class="nav-gap"></span>
 
     <nav *ngIf="!(isHandset$ | async)">
-
-        <mat-menu #rootMenu="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="subMenu">Power</button>
-            <button mat-menu-item>System settings</button>
-          </mat-menu>
-          
-          <mat-menu #subMenu="matMenu">
-            <button mat-menu-item>Shut down</button>
-            <button mat-menu-item>Restart</button>
-            <button mat-menu-item>Hibernate</button>
-          </mat-menu>
-          
-          <button mat-button [matMenuTriggerFor]="rootMenu">
-            Test
-          </button>
-
-
-      <button mat-button [matMenuTriggerFor]="aboutMenu">Menu</button>
-
+      <a mat-button [matMenuTriggerFor]="aboutMenu">About</a>
       <mat-menu #aboutMenu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
+        <button mat-menu-item (click)="toSection('top')">About Ki</button>
+        <button mat-menu-item (click)="toSection('education')">Education</button>
+        <button mat-menu-item (click)="toSection('skills')">Skills</button>
+        <button mat-menu-item (click)="toSection('photos')">Photos</button>
       </mat-menu>
-
-
-      <a href="#" mat-button>About</a>
-      <a href="#" mat-button>Project</a>
+      <a routerLink="/projects" mat-button>Projects</a>
+      <a href="" mat-button>Resume</a>
       <a mat-button (click)="toContact()">Contact</a>
     </nav>
 
-    <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="isHandset$ | async">
+    <button mat-icon-button [matMenuTriggerFor]="rootMenu" *ngIf="isHandset$ | async">
       <mat-icon>menu</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>camera</mat-icon>
-        <span>Redial</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon></mat-icon>
-        <span>Check voicemail</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon></mat-icon>
-        <span>Disable alerts</span>
-      </button>
+
+    <mat-menu #rootMenu="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="aboutSubMenu">About</button>
+      <button mat-menu-item routerLink="/projects">Projects</button>
+      <button mat-menu-item (click)="toContact()">Contact</button>
     </mat-menu>
+
+    <mat-menu #aboutSubMenu="matMenu">
+      <button mat-menu-item (click)="toSection('top')">About Ki</button>
+      <button mat-menu-item (click)="toSection('education')">Education</button>
+      <button mat-menu-item (click)="toSection('skills')">Skills</button>
+      <button mat-menu-item (click)="toSection('photos')">Photos</button>
+    </mat-menu>
+
   </div>
 </mat-toolbar>
+
+<div class="nav-spacer" id="top" fxLayout="row"></div>

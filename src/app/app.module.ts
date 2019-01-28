@@ -4,12 +4,12 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 import { FlexLayoutModule } from "@angular/flex-layout";
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatCardModule} from '@angular/material/card';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,6 +18,9 @@ import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { MoreAboutComponent } from './more-about/more-about.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProjectsComponent } from './projects/projects.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { MoreAboutComponent } from './more-about/more-about.component';
     EducationComponent,
     SkillsComponent,
     FooterComponent,
-    MoreAboutComponent
+    MoreAboutComponent,
+    ProjectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,8 @@ import { MoreAboutComponent } from './more-about/more-about.component';
     MatGridListModule,
     MatDividerModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
