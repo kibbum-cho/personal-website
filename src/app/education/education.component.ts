@@ -34,7 +34,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-
 export class EducationComponent implements OnInit, AfterViewInit {
   educations: Education[];
   states: string[];

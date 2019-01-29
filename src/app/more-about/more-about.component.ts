@@ -25,7 +25,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-
 export class MoreAboutComponent implements OnInit {
   states = ['out1', 'out2', 'out3' ];
 
