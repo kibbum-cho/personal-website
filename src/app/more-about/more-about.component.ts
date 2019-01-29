@@ -17,10 +17,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         animate('1.2s ease-out')
       ]),
       transition('out2 => in', [
-        animate('1.2s 0.6s ease-out')
+        animate('1.2s 0.4s ease-out')
       ]),
       transition('out3 => in', [
-        animate('1.2s 1.2s ease-out')
+        animate('1.2s 0.8s ease-out')
       ])
     ])
   ]

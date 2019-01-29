@@ -14,7 +14,7 @@
         <button mat-menu-item (click)="toSection('photos')">Photos</button>
       </mat-menu>
       <a routerLink="/projects" mat-button>Projects</a>
-      <a href="" mat-button>Resume</a>
+      <a href="https://drive.google.com/open?id=100ATYMVufqjcblZx6oqtn7nzR0Kudk3S" target="_blank" mat-button>Resume</a>
       <a mat-button (click)="toContact()">Contact</a>
     </nav>
 
@@ -25,6 +25,7 @@
     <mat-menu #rootMenu="matMenu">
       <button mat-menu-item [matMenuTriggerFor]="aboutSubMenu">About</button>
       <button mat-menu-item routerLink="/projects">Projects</button>
+      <a href="https://drive.google.com/open?id=100ATYMVufqjcblZx6oqtn7nzR0Kudk3S" target="_blank" mat-button>Resume</a>
       <button mat-menu-item (click)="toContact()">Contact</button>
     </mat-menu>
 

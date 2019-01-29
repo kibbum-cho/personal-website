@@ -2,6 +2,10 @@
     padding-bottom: 30px;
 }
 
+.education-row {
+    overflow: hidden;
+}
+
 .education-row:not(:last-child) {
     margin-bottom: 1em;
 }

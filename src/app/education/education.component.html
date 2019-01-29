@@ -4,10 +4,10 @@
 
 <div class="education-container">
   <div *ngFor="let education of educations; index as i" class="education-row" fxLayout="row wrap" fxLayoutAlign="center start">
-    <div class="education-chart-left" [@leftFlyIn]="states[i]" fxFlex="35%" fxFlex.lt-md="35%" fxFlex.lt-sm="85%">
+    <div [@leftFlyIn]="states[i]" class="education-chart-left" fxFlex="35%" fxFlex.lt-md="35%" fxFlex.lt-sm="85%">
       <h4>{{education.term}} :</h4>
     </div>
-    <div class="education-chart-right" [@rightFlyIn]="states[i]" fxFlex="45%" fxFlex.lt-md="50%" fxFlex.lt-sm="85%">
+    <div [@rightFlyIn]="states[i]" class="education-chart-right" fxFlex="45%" fxFlex.lt-md="50%" fxFlex.lt-sm="85%">
       <div class="edu-detail-container" >
         <div class="education-logo-container">
             <img src="../../assets/logos/{{education.logo}}">
